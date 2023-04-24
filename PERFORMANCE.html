@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台大吉他社</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Ff-7WeEfW3P4xMJTR");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="NTU GUITAR CLUB.html" style="text-decoration: none;">
+                <h1 style="color: #ffff;text-decoration: none;">NTUGC</h1>
+            </a>
+            <ul>
+                <li><a href="NTU GUITAR CLUB.html">Main Page</a></li>
+                <li><a href="幹部介紹.html">Member</a></li>
+                <li><a href="活動介紹.html">Activity</a></li>
+                <li><a href="表演影音.html">performance</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1 style="color: #f3b977;text-align: center;">VIDEOS</h1>
+        <div class="owl-carousel">
+            <div class="item-video" data-merge="1.5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X-cil4AGpLc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="item-video" data-merge="1.5">
+                <iframe width="560" height="310" src="https://www.youtube.com/embed/6-9KI0n4UTI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="item-video" data-merge="1.5">
+                <iframe width="560" height="310" src="https://www.youtube.com/embed/XnnWPHwn4m8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="item-video" data-merge="1.5">
+                <iframe width="560" height="310" src="https://www.youtube.com/embed/QznfXaNj_kY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="item-video" data-merge="1.5">
+                <iframe width="560" height="310" src="https://www.youtube.com/embed/EJlvNhCyWac"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!--- javascript --->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(".owl-carousel").owlCarousel({
+            merge: true,
+            loop: true,
+            margin: 10,
+            video: true,
+            lazyLoad: true,
+            center: true
+        });
+    </script>
+    <div style="display: flex;display: flex;align-items: center;justify-content: center;">
+        <form class="email-box" style="margin-top: 30px;">
+            <h3 style="color: #f3b977;font-weight: 800;margin-bottom: 20px;">GET IN TOUCH!</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" rows="5" placeholder="Message"></textarea>
+            <button type="submit" class="email-button" onclick="sendEmail()"><span
+                    class="email-button_trans"></span>Send</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

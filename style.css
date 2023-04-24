@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+body {
+    background-size: cover;
+    /* 調整背景圖片的大小以填滿整個畫面 */
+    background-attachment: fixed;
+    /* 將背景圖片固定在背景 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(main\ page\ background.jpg);
+}
+
+.banner {
+    width: 100%;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    background-color: black;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #784710;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.main_page_title {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.main_page_button {
+    width: 200px;
+    height: auto;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #ffff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_page_button_trans {
+    background: #784710;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.main_page_button:hover .main_page_button_trans {
+    width: 100%;
+}
+
+.main_page_button:hover {
+    border: none;
+}
+
+footer {
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+}
+
+.page_title {
+    color: #ffff;
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+.owl-carousel {
+    top: 40px
+}
+
+.owl-carousel .item-video {
+    height: 300px;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.owl-dot {
+    display: inline-block;
+    margin-top: 2px;
+    align-items: center;
+}
+
+.owl-dot span {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    margin: 5px 3px;
+    margin-bottom: 30px;
+}
+
+.owl-dot.active span {
+    background-color: #784710;
+
+}
+
+.email-box {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    border-radius: 10px;
+}
+
+form input,
+form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: rgba(241, 240, 240, 0.664);
+    font-size: 16px;
+
+}
+
+.email-button {
+    padding: 15px;
+    background: #f3b977;
+    color: #ffff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 300px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    overflow: hidden;
+}

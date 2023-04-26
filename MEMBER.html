@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>台大吉他社</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,16 +16,134 @@
             </a>
             <ul>
                 <li><a href="NTU GUITAR CLUB.html">Main Page</a></li>
-                <li><a href="幹部介紹.html">Member</a></li>
-                <li><a href="活動介紹.html">Activity</a></li>
-                <li><a href="表演影音.html">performance</a></li>
+                <li><a href="MEMBER.html">Member</a></li>
+                <li><a href="ACTIVITY.html">Activity</a></li>
+                <li><a href="PERFORMANCE.html">performance</a></li>
             </ul>
         </div>
     </div>
-    <h1 class="page_title">幹部介紹</h1>
-    <footer>
-        #台大吉他社現由110級幹部經營
-    </footer>
+    <h1 style="color: #f3b977;text-align: center; font-weight: 800;margin-top: 80px;">MEMBER</h1>
+    <div class="slider_body">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="member_cards">
+                        <div class="card" data-tilt>
+                            <img src="photo/正副社.jpg">
+                            <h2>正副社</h2>
+                            <p>凱蒂斯 謝士雍</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="member_cards">
+                        <div class="card" data-tilt>
+                            <img src="photo/教學部.jpg">
+                            <h2>教學部</h2>
+                            <p>翁肇陽 浩克寶寶 緯寶 劭</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="member_cards">
+                        <div class="card" data-tilt>
+                            <img src="photo/活動部.jpg">
+                            <h2>活動部</h2>
+                            <p>Johnson Momo 蔡蔡 許鴻齊 鄭鈞文</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="member_cards">
+                        <div class="card" data-tilt>
+                            <img src="photo/民歌之夜-243.jpg">
+                            <h2>器材部</h2>
+                            <p>曹灝翰 布布 林立 Eddie老師 古政立</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="member_cards">
+                        <div class="card" data-tilt>
+                            <img src="photo/民歌之夜-243.jpg">
+                            <h2>美宣部</h2>
+                            <p>輸光 倪 陳一紅 陳薏如 游竣宇</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="member_cards">
+                        <div class="card" data-tilt>
+                            <img src="photo/民歌之夜-243.jpg">
+                            <h2>公關部</h2>
+                            <p>謙 李佳頴 林佳瑜 孟 黃昭勳 劉建豪</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="member_cards">
+                        <div class="card" data-tilt>
+                            <img src="photo/總務.jpg">
+                            <h2>總務</h2>
+                            <p>林溥先生</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="member_cards">
+                        <div class="card" data-tilt>
+                            <img src="photo/網管.jpg">
+                            <h2>網管</h2>
+                            <p>蔡亞恩</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 1,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + "</span>";
+                    },
+                },
+                keyboard: {
+                    enabled: true,
+                },
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                spaceBetween: 50,
+            });
+        </script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="vanilla-tilt.js"></script>
+
+
 </body>
 
 </html>

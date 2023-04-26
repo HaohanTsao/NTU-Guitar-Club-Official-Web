@@ -11,7 +11,7 @@ body {
     /* 調整背景圖片的大小以填滿整個畫面 */
     background-attachment: fixed;
     /* 將背景圖片固定在背景 */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(main\ page\ background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(photo/main\ page\ background.jpg);
 }
 
 .banner {
@@ -182,14 +182,124 @@ form textarea {
 
 .email-button {
     padding: 15px;
-    background: #f3b977;
+    background: transparent;
     color: #ffff;
     font-size: 18px;
-    border: 0;
+    border: 2px solid #ffff;
     outline: none;
     cursor: pointer;
     width: 300px;
+    margin-top: 20px;
     margin: 20px auto 0;
     border-radius: 30px;
     overflow: hidden;
+    transition: 0.1s;
+}
+
+.email-button:hover {
+    background: #f3b977;
+    border: 2px solid transparent;
+}
+
+
+
+.member_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
+
+.card {
+    width: 500px;
+    max-width: 800px;
+    max-height: 500px;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 35px 35px;
+    border: 1px solid rgba(114, 94, 32, 0.3);
+    background: rgba(79, 60, 4, 0.402);
+    border-radius: 16px;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.731);
+    backdrop-filter: blur(10px);
+}
+
+.card img {
+    width: 450px;
+}
+
+.card h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.slider_body {
+    position: relative;
+    height: 500px;
+}
+
+.slider_body {
+    background: transparent;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ada9a9;
+    opacity: 1;
+    background: rgba(245, 244, 244, 0.854);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #784710;
+}
+
+.swiper-button-next {
+    color: #fff;
+}
+
+.swiper-button-prev {
+    color: #fff;
+}
+
+.swiper-button-next:hover {
+    color: #f3b977;
+}
+
+.swiper-button-prev:hover {
+    color: #f3b977;
 }

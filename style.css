@@ -325,6 +325,7 @@ form textarea {
     box-shadow: none;
     border: none;
     background: rgba(255, 255, 255, 1);
+    color: black;
 }
 
 .slider__navi a.active {
@@ -358,7 +359,7 @@ form textarea {
     -ms-justify-content: flex-start;
     -o-justify-content: flex-start;
     justify-content: flex-start;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     z-index: 1;
 }
@@ -383,9 +384,9 @@ form textarea {
 }
 
 .text--normal {
-    font-size: 13px;
+    font-size: 40px;
     color: rgba(255, 255, 255, 0.8);
-    line-height: 22px;
+    line-height: 40px;
     margin-top: 25px;
 }
 
@@ -393,8 +394,8 @@ form textarea {
     font-family: 'Poppins', sans-serif;
     position: absolute;
     left: 72px;
-    bottom: -20px;
-    color: rgba(118, 88, 12, 0.632);
+    bottom: 100px;
+    color: rgba(118, 88, 12, 0.212);
     font-size: 170px;
     font-weight: 700;
 }
@@ -500,6 +501,7 @@ form textarea {
     right: 10%;
     max-height: 40vw;
     opacity: 1;
+    max-width: 500px;
     transform: translate3d(0, 0, 0);
     transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
 }
@@ -534,4 +536,8 @@ form textarea {
 .flex__container.animate--end .pokemon__img {
     transform: translate3d(200px, 0, 0);
     opacity: 0;
+}
+
+.slider__warpper {
+    margin-top: 0%;
 }

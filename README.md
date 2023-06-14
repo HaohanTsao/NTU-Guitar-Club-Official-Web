@@ -2,4 +2,4 @@
 Design for NTU Guitar Club
 
 ## **Develop Status**
-Still developing
+Online!
